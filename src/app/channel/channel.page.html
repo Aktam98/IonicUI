@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-card-content style="background-color: #5d58e0;color: white">
+      <ion-label>Count - {{data.user}}</ion-label><br/>
+      <ion-label>{{date|date:'yyyy.MM.dd hh:ss'}}</ion-label>
+    </ion-card-content>
+  </ion-card>
+<div style="text-align: center;margin-bottom: 70px;margin-top: 50px">
+<!--  <ion-icon name="logo-electron" style="font-size: 150px;color: #5d58e0"></ion-icon>-->
+  <ion-icon name="speedometer-sharp" style="font-size: 150px;color: #5d58e0"></ion-icon>
+</div>
+
+    <ion-item>
+      <ion-input placeholder="Enter username" [(ngModel)]="msgDto.user"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Enter password" [(ngModel)]="msgDto.msgText"></ion-input>
+    </ion-item>
+  <ion-button color="tertiary" expand="block" (click)="send()" style="margin-right: 10px;margin-left: 10px;margin-top: 10px;">Connect</ion-button>
+ </ion-content>
+
+
